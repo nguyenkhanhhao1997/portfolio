@@ -10,34 +10,46 @@ import TrackVisibility from "react-on-screen";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "W2 Solution",
+      description: "Development",
       imgUrl: projImg1,
+      tab: "sutrix",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Yu Cai Foundation",
+      description: "Development",
       imgUrl: projImg2,
+      tab: "sutrix",
     },
     {
-      title: "Business Startup",
+      title: "Tecom",
       description: "Design & Development",
       imgUrl: projImg3,
+      tab: "sutrix",
     },
     {
-      title: "Business Startup",
+      title: "EMS",
       description: "Design & Development",
       imgUrl: projImg1,
+      tab: "vacs",
     },
     {
-      title: "Business Startup",
+      title: "FreeCAD",
       description: "Design & Development",
       imgUrl: projImg2,
+      tab: "vacs",
     },
     {
-      title: "Business Startup",
+      title: "OSM",
       description: "Design & Development",
       imgUrl: projImg3,
+      tab: "vacs",
+    },
+    {
+      title: "iBeBiz",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      tab: "ibebiz",
     },
   ];
 
@@ -68,13 +80,13 @@ const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="sutrix">Sutrix Solutions</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="vacs">VACS Technology</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="ibebiz">Ibebiz</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -83,30 +95,38 @@ const Projects = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey="sutrix">
                         <Row>
                           {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              project.tab === "sutrix" && (
+                                <ProjectCard key={index} {...project} />
+                              )
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="vacs">
+                        <Row>
+                          {projects.map((project, index) => {
+                            return (
+                              project.tab === "vacs" && (
+                                <ProjectCard key={index} {...project} />
+                              )
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="ibebiz">
+                        <Row>
+                          {projects.map((project, index) => {
+                            return (
+                              project.tab === "ibebiz" && (
+                                <ProjectCard key={index} {...project} />
+                              )
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

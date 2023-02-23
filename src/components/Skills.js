@@ -50,12 +50,12 @@ const Skills = () => {
                 <div className="item">
                   <img src={star} alt="Image" />
                   <h6>3 Year</h6>
-                  <h5>.NET Framework</h5>
+                  <h5>.NET</h5>
                 </div>
                 <div className="item">
                   <img src={star} alt="Image" />
-                  <h6>1 Year</h6>
-                  <h5>ReactJs</h5>
+                  <h6>2 Year</h6>
+                  <h5>Javascript/Jquery</h5>
                 </div>
                 <div className="item">
                   <img src={star} alt="Image" />
@@ -86,24 +86,20 @@ const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>.NET</h5>
+                  <h5>Teamwork</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>ReactJs</h5>
+                  <h5>Communication</h5>
                 </div>
-                <div className="item">
+                {/* <div className="item">
                   <img src={meter3} alt="Image" />
                   <h5>SQL Server</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter2} alt="Image" />
                   <h5>Unit Test</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Unit Test</h5>
-                </div>
+                </div> */}
               </Carousel>
             </div>
           </div>

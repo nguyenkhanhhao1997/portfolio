@@ -65,7 +65,7 @@ const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Judy`}{" "}
+                    {`Nguyen Khanh Hao`}{" "}
                     {/* <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -73,7 +73,7 @@ const Banner = () => {
                     >
                       <span className="wrap">{text}</span>
                     </span> */}
-                    <span className="wrap">Developer</span>
+                    {/* <span className="wrap">Developer</span> */}
                   </h1>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -82,9 +82,9 @@ const Banner = () => {
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>

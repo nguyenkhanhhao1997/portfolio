@@ -301,6 +301,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+.react-multi-carousel-track {
+  margin: auto;
+}
 .skill {
   padding: 0 0 50px 0;
   position: relative;
