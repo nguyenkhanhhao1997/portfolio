@@ -1,8 +1,15 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import w2solution from "../assets/img/w2-solution.png";
+import ycf from "../assets/img/yucai-foundation.png";
+import tecom from "../assets/img/tecom.png";
+import freecad from "../assets/img/freecad.png";
+import revit from "../assets/img/revit.png";
+import vacs from "../assets/img/vacs.png";
+import ibebiz from "../assets/img/ibebiz.png";
+// import projImg1 from "../assets/img/project-img1.png";
+// import projImg2 from "../assets/img/project-img2.png";
+// import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -11,44 +18,58 @@ const Projects = () => {
   const projects = [
     {
       title: "W2 Solution",
-      description: "Development",
-      imgUrl: projImg1,
+      description: "Ecommerce website",
+      tech: ".NET, Javascript",
+      imgUrl: w2solution,
+      url: "https://www.w2solution.com/",
       tab: "sutrix",
     },
     {
       title: "Yu Cai Foundation",
-      description: "Development",
-      imgUrl: projImg2,
+      description: "Collect information",
+      tech: ".NET, Kentico, Javascript",
+      imgUrl: ycf,
+      url: "https://www.ycf.org.my/",
       tab: "sutrix",
     },
     {
       title: "Tecom",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      description: "Business",
+      tech: ".NET, Kentico, Javascript",
+      imgUrl: tecom,
+      url: "https://tecomgroup.ae/",
       tab: "sutrix",
     },
     {
-      title: "EMS",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "ERP",
+      description: "Internal ERP system",
+      tech: ".NET, Kentico, Javascript",
+      imgUrl: vacs,
+      url: "#",
+      tab: "vacs",
+    },
+    {
+      title: "Revit Addon",
+      description: "Import file, template, create model",
+      tech: "C#, Revit API, Winform",
+      imgUrl: revit,
+      url: "#",
       tab: "vacs",
     },
     {
       title: "FreeCAD",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      tab: "vacs",
-    },
-    {
-      title: "OSM",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      description: "3D parametric modeler",
+      tech: "Python, Qt5",
+      imgUrl: freecad,
+      url: "https://www.freecad.org/",
       tab: "vacs",
     },
     {
       title: "iBeBiz",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      description: "Ecommerce website",
+      tech: ".NET, Angularjs, Unit test",
+      imgUrl: ibebiz,
+      url: "#",
       tab: "ibebiz",
     },
   ];
@@ -73,7 +94,7 @@ const Projects = () => {
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
                   </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <Tab.Container id="projects-tabs" defaultActiveKey="sutrix">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"

@@ -448,6 +448,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%;
   opacity: 1;
 }
+.proj-txtx a {
+  color: white;
+  text-decoration: none;
+}
+.proj-txtx a:hover {
+  color: white;
+  text-decoration: underline;
+}
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
