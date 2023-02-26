@@ -50,7 +50,7 @@ const Projects = () => {
     },
     {
       title: "Revit Addon",
-      description: "Import file, template, create model",
+      description: "Import CAD file, create template & models",
       tech: "C#, Revit API, Winform",
       imgUrl: revit,
       url: "#",

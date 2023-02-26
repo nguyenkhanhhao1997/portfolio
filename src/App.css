@@ -229,6 +229,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.navbar-brand h4 {
+  color: #fff;
+  vertical-align: middle;
+}
+.navbar-light .navbar-toggler{
+  /* color: white; */
+  border-color: white;
+}
 
 /************ Banner Css ************/
 .banner {
@@ -448,15 +456,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx a {
+.proj-header a {
   color: white;
   text-decoration: none;
 }
-.proj-txtx a:hover {
+.proj-header a:hover {
   color: white;
   text-decoration: underline;
 }
-.proj-txtx h4 {
+.proj-header h4 {
+  text-align: center;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
